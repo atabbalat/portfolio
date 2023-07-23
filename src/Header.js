@@ -6,7 +6,7 @@ function Header() {
   return (
     <div className='App-header'>
       <div className='abed-logo'>
-        <img src={abedLogo}></img>
+        <img src={abedLogo} alt='Abed Logo'></img>
       </div>
       <div className='nav-container'>
         <div className='link-div'>
