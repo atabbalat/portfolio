@@ -16,20 +16,30 @@ import PageContainer from './PageContainer'
 import { Helmet } from 'react-helmet'
 
 function App() {
+  const navigate = useNavigate()
+
   useEffect(() => {
     const handlePageRefresh = event => {
+      event.preventDefault()
       // Display a confirmation message to the user
       event.returnValue = 'Are you sure you want to leave?'
     }
 
-    // Attach the event listener to the beforeunload event
-    window.addEventListener('beforeunload', handlePageRefresh)
+    const handleHashChange = () => {
+      // If the URL hash changes (e.g., due to page refresh), redirect to the home page
+      navigate('/')
+    }
 
-    // Clean up the event listener when the component is unmounted
+    // Attach the event listeners
+    window.addEventListener('beforeunload', handlePageRefresh)
+    window.addEventListener('hashchange', handleHashChange)
+
+    // Clean up the event listeners when the component is unmounted
     return () => {
       window.removeEventListener('beforeunload', handlePageRefresh)
+      window.removeEventListener('hashchange', handleHashChange)
     }
-  }, [])
+  }, [navigate])
   const appStyle = { 'font-family': 'Titillium Web' }
   return (
     <BrowserRouter basename='/portfolio'>
