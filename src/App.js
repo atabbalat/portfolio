@@ -26,7 +26,7 @@ function App() {
         <Header />
         <Routes>
           <Route
-            path='/'
+            path=''
             element={
               <PageContainer title='Data Science Portfolio'>
                 <h5 style={appStyle}>By Abed Tabbalat</h5>
