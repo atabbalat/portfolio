@@ -1,6 +1,7 @@
 import './App.css'
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { useEffect } from 'react'
 // Components
 import Header from './Header'
 import WeatherApp from './Components/WeatherApp'
@@ -15,6 +16,20 @@ import PageContainer from './PageContainer'
 import { Helmet } from 'react-helmet'
 
 function App() {
+  useEffect(() => {
+    const handlePageRefresh = event => {
+      // Display a confirmation message to the user
+      event.returnValue = 'Are you sure you want to leave?'
+    }
+
+    // Attach the event listener to the beforeunload event
+    window.addEventListener('beforeunload', handlePageRefresh)
+
+    // Clean up the event listener when the component is unmounted
+    return () => {
+      window.removeEventListener('beforeunload', handlePageRefresh)
+    }
+  }, [])
   const appStyle = { 'font-family': 'Titillium Web' }
   return (
     <BrowserRouter basename='/portfolio'>
