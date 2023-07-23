@@ -1,0 +1,237 @@
+.App {
+  display: grid;
+  grid-template-columns: 0.25fr 0.75fr;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+body {
+  font-family: 'Playfair Display', serif;
+  margin: 1em;
+}
+.app-header,
+.covid-analysis,
+.weather-app,
+.insurance-modeling,
+.diabetes-modeling,
+.neural-network,
+.movie-app,
+.chat-bot {
+  grid-column-start: 2;
+}
+.weather-app,
+.home-list,
+.covid-analysis,
+.insurance-modeling,
+.diabetes-modeling,
+.neural-network,
+.movie-app,
+.chat-bot {
+  margin-top: 2em;
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-bottom: 5em;
+}
+.App-logo {
+  height: 150px;
+  pointer-events: none;
+}
+/* .home-div,
+.weather-app,
+.covid-analysis,
+.insurance-modeling,
+.diabetes-modeling,
+.neural-network,
+.movie-app,
+.chat-bot {
+  margin-top: 2em;
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-bottom: 5em;
+  font-size: 18px;
+} */
+.page-container {
+  margin-top: 2em;
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-bottom: 5em;
+  font-size: 18px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.App-header {
+  background-color: rgb(64, 64, 64);
+  display: flex;
+  flex-direction: column;
+  /* width: 35%; */
+  align-items: center;
+  /* justify-content: flex-start; */
+  /* font-size: calc(10px + 2vmin); */
+  color: white;
+}
+.header-app {
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.App-link {
+  color: #61dafb;
+}
+h2,
+h5 {
+  text-align: center;
+}
+h3 {
+  text-align: left;
+}
+p .weather-nav {
+  text-align: center;
+  align-items: center;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+li {
+  text-align: left;
+  margin-top: 0.5em;
+  list-style: none;
+}
+button {
+  margin-top: 1em;
+}
+div.link-div {
+  display: inline-flex;
+  text-align: center;
+  margin: 0.3em;
+}
+a#link,
+a.code-structure-link {
+  background-color: rgba(70, 73, 73, 0.041);
+  font-weight: bold;
+  border-radius: 8px;
+  border-color: rgb(238, 238, 238);
+  color: rgb(238, 238, 238);
+  padding: 5px 20px;
+  /* margin-top: 1em; */
+  /* margin-bottom: 1em; */
+  text-decoration: none;
+  text-align: left; /* Center the text horizontally */
+  font-size: 16px;
+  width: 300px; /* width of your choice */
+  height: 50px; /* height of your choice */
+  line-height: 50px; /* Vertically center the text */
+  display: inline-block; /* make sure your a tag behaves like a block element */
+  overflow: hidden; /* hide text that exceeds button width */
+  text-overflow: ellipsis; /* adds '...' if text exceeds button width */
+  white-space: nowrap;
+}
+a#link:hover,
+a.code-structure-link:hover {
+  background-color: #282c34;
+  color: wheat;
+}
+a.repository-link {
+  font-family: 'Titillium Web', sans-serif;
+  background-color: rgba(64, 64, 64);
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 5px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(238, 238, 238);
+}
+a.repository-link:hover {
+  cursor: pointer;
+  border-style: none;
+  font-weight: bold;
+  background-color: rgb(238, 238, 238);
+  color: rgba(64, 64, 64);
+  transform: scale(1.2);
+}
+ol {
+  margin: 1em;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+img {
+  max-width: 300px;
+  max-height: 300px;
+}
+/* .home-div {
+  text-align: center;
+  margin: 10em;
+} */
+
+.header-container {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black; /* change as per your preference */
+}
+h1.page-title {
+  /* max-width: 1000px; */
+  /* height: 2.5em; */
+  /* background-color: rgb(64, 64, 64); */
+  text-align: center;
+}
+.abed-logo {
+  max-width: 75%;
+  max-height: 20%;
+  /* margin-left: 5px; */
+  /* margin-left: 2em; */
+  /* border: 3px solid; */
+  border-color: rgb(238, 238, 238);
+  animation: fadeIn 3s;
+  display: block;
+  /* justify-content: flex-end; */
+  /* padding: 10px; */
+}
+
+.nav-container {
+  width: 350px;
+  border: 2px solid rgb(238, 238, 238); /* change as per your preference */
+  height: 1247px; /* adjust as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 10px;
+  margin-bottom: 5em;
+  font-family: 'Titillium Web', sans-serif;
+}
+p {
+  text-align: left;
+}
+.page-children {
+  margin-top: 2em;
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-bottom: 5em;
+}
+header {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Titillium Web', sans-serif;
+}
+main {
+  margin-top: 2em;
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-bottom: 5em;
+  font-size: 18px;
+}
