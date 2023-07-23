@@ -2,6 +2,7 @@ import './App.css'
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 // Components
 import Header from './Header'
 import WeatherApp from './Components/WeatherApp'
