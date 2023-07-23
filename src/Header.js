@@ -9,7 +9,7 @@ function Header() {
       </div>
       <div className='nav-container'>
         <div className='link-div'>
-          <Link id='link' to='/' title='Home'>
+          <Link id='link' to='/portfolio' title='Home'>
             Home
           </Link>
         </div>
