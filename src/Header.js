@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import abedLogo from './Components/Abed_Artboard_14.png'
+
 function Header() {
   return (
     <div className='App-header'>
@@ -9,7 +10,7 @@ function Header() {
       </div>
       <div className='nav-container'>
         <div className='link-div'>
-          <Link id='link' to='/portfolio' title='Home'>
+          <Link id='link' to='/' title='Home'>
             Home
           </Link>
         </div>

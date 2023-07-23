@@ -12,18 +12,23 @@ import NeuralNetwork from './Components/NeuralNetwork'
 import MovieApp from './Components/MovieApp'
 import ChatBot from './Components/ChatBot'
 import PageContainer from './PageContainer'
+import { Helmet } from 'react-helmet'
 
 function App() {
   const appStyle = { 'font-family': 'Titillium Web' }
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/portfolio'>
       <div className='App'>
+        <Helmet>
+          <title>Abed's Portfolio</title>
+          <link rel='icon' href='/abed_favicon.ico' />
+        </Helmet>
         <Header />
         <Routes>
           <Route
-            path='/portfolio'
+            path='/'
             element={
-              <PageContainer title={'Data Science Portfolio'}>
+              <PageContainer title='Data Science Portfolio'>
                 <h5 style={appStyle}>By Abed Tabbalat</h5>
                 <Home />
               </PageContainer>
@@ -66,7 +71,7 @@ function App() {
             }
           />
           <Route
-            path='/neuralnetwork'
+            path='/neuralnetwork/'
             element={
               <PageContainer title='Neural Network Image Classification'>
                 <h5 style={appStyle}>By Abed Tabbalat</h5>
