@@ -13,6 +13,7 @@ import DiabetesModeling from './Components/DiabetesModeling'
 import NeuralNetwork from './Components/NeuralNetwork'
 import MovieApp from './Components/MovieApp'
 import ChatBot from './Components/ChatBot'
+import Contact from './Components/Contact'
 import PageContainer from './PageContainer'
 import { Helmet } from 'react-helmet'
 
@@ -97,6 +98,15 @@ function App() {
               <PageContainer title='Insurance Chat Bot'>
                 <h5 style={appStyle}>By Abed Tabbalat</h5>
                 <ChatBot />
+              </PageContainer>
+            }
+          />
+          <Route
+            path='/contact'
+            e
+            element={
+              <PageContainer title='Contact'>
+                <Contact />
               </PageContainer>
             }
           />

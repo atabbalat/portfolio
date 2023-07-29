@@ -112,12 +112,15 @@ div.link-div {
   display: inline-flex;
   text-align: center;
   margin: 0.3em;
+  border-style: solid;
+  border-color: white;
 }
+
 a#link,
 a.code-structure-link {
   background-color: rgba(70, 73, 73, 0.041);
   font-weight: bold;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   border-color: rgb(238, 238, 238);
   color: rgb(238, 238, 238);
   padding: 5px 20px;
@@ -204,7 +207,7 @@ h1.page-title {
 
 .nav-container {
   width: 350px;
-  border: 2px solid rgb(238, 238, 238); /* change as per your preference */
+  /* border: 2px solid rgb(238, 238, 238); change as per your preference */
   height: 1247px; /* adjust as needed */
   display: flex;
   flex-direction: column;
@@ -234,4 +237,42 @@ main {
   margin-right: 5em;
   margin-bottom: 5em;
   font-size: 18px;
+}
+.clink-div {
+  display: inline-block;
+  font-family: 'Titillium Web', sans-serif;
+  background-color: rgba(64, 64, 64);
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 5px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  /* color: rgb(238, 238, 238); */
+  width: 170px;
+}
+.github,
+.email,
+.linkedin {
+  text-decoration: none;
+  color: rgb(238, 238, 238);
+}
+.github:hover,
+.email:hover,
+.linkedin:hover {
+  text-decoration: none;
+  color: rgba(64, 64, 64);
+}
+
+.clink-div:hover .github,
+.clink-div:hover .email,
+.clink-div:hover .linkedin {
+  cursor: pointer;
+  border-style: none;
+  font-weight: bold;
+  background-color: rgb(238, 238, 238);
+  color: rgba(64, 64, 64);
+}
+.clink-div:hover {
+  cursor: pointer;
+  background-color: rgb(238, 238, 238);
 }

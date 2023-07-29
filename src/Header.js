@@ -15,6 +15,13 @@ function Header() {
           </Link>
         </div>
         <div className='link-div'>
+          <Link id='link' to='/contact'>
+            Contact
+          </Link>
+        </div>
+        <br></br>
+        <h3>List of Projects</h3>
+        <div className='link-div'>
           <Link id='link' to='/weatherapp'>
             WeatherApp
           </Link>

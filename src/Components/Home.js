@@ -98,7 +98,6 @@ function Home() {
           <br></br>
           Best, <br></br>
           Abed Tabbalat <br></br>
-          Contact: abedtabbalat@gmail.com
         </p>
       </div>
     </div>
